@@ -246,7 +246,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:64px;border-top:1px solid 
 <p class="affil"><sup>1</sup>KAIST AI&emsp;<sup>2</sup>Independent researcher</p>
 <p class="note"><sup>&dagger;</sup>Co-corresponding authors</p>
 <div class="links">
-  <a href="#">Paper</a>
+  <a href="https://arxiv.org/abs/2610.02858">arXiv</a>
   <span title="The code will be released soon">Code (coming soon)</span>
   <a href="#bibtex">BibTeX</a>
 </div>
@@ -1550,7 +1550,7 @@ z
 
 
 <h2>Abstract</h2>
-<p>Language model agents are deployed with a harness, the software around the model that manages its context, tools, and feedback. When such an agent is distilled into a smaller one, the harness stays in place, so the student mainly needs the teacher-specific abilities that the harness cannot provide, such as acting correctly on harness information. Standard distillation, however, imitates the teacher's full outputs and treats the harness as part of the input. We propose Harness-Aware Distillation (HAD), which focuses distillation on what the teacher adds beyond the harness. HAD complements on-policy distillation with two components: an action preference that contrasts the same teacher's actions with and without the harness information, scored after the student's own reasoning, and a validity check that drops preference pairs whose preferred action contradicts the harness records. We show that the contrast gives the student information that the teacher's responses alone cannot provide, and HAD needs no task rewards, success labels, or future information. Across multiple long-horizon agent benchmarks and models, HAD outperforms on-policy distillation baselines with the same harness, and on one benchmark its student even surpasses the larger teacher. Our analysis shows that HAD enters fewer unproductive loops and recovers from errors more often than the baselines, and suggests that it adaptively keeps learnable feedback in its weights while reading state information from the harness.</p>
+<p>Language model agents are deployed with a harness, the software around the model that manages its context, tools, and feedback. When such an agent is distilled into a smaller one, the harness stays in place, so the student mainly needs the teacher-specific abilities that the harness cannot provide, such as acting correctly on harness information. Standard distillation, however, imitates the teacher's full outputs and treats the harness as part of the input. We propose Harness-Aware Distillation (HAD), which focuses distillation on what the teacher adds beyond the harness. HAD complements on-policy distillation with two components: an action preference that contrasts the same teacher's actions with and without the harness information, scored after the student's own reasoning, and a validity check that drops preference pairs whose preferred action contradicts the harness records. We show that the contrast gives the student information that imitating the teacher alone cannot provide, and HAD needs no task rewards, success labels, or future information. Across multiple long-horizon agent benchmarks and models, HAD outperforms on-policy distillation baselines with the same fixed harness. Our analysis shows that HAD enters fewer unproductive loops and recovers from errors more often than the baselines, and suggests that it adaptively keeps learnable feedback in its weights while reading state information from the harness.</p>
 
 <p class="eyebrow">Motivation</p>
 <h2 id="failures">Three ways on-policy distillation misses the harness</h2>
@@ -5533,7 +5533,7 @@ z
 <pre class="bib" id="bibText">@article{choi2026had,
   title   = {Harness-Aware Distillation for Small Language Model Agents},
   author  = {Choi, Moonseok and Moon, Taehong and Nam, Giung and Lee, Juho},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  journal = {arXiv preprint arXiv:2610.02858},
   year    = {2026}
 }</pre>
 
